@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Your Cart – Hunt Apparel</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-3DGvgnk8prqZRXZF6pAPGYzK+1sO4/e5wkkx8/bO7G3Q+JZiMQ9OJ07MN/GKoFO5P3FsBHmuoKUDSfaYdKTZ3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <!-- Site header redesigned for balanced layout -->
+  <header class="site-header">
+    <nav class="left-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Hunt logo"></a>
+    </div>
+    <nav class="right-nav">
+      <a href="size-guide.html">Size Guide</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link" aria-label="View cart">
+        <i class="fa-solid fa-cart-shopping"></i> Cart
+        (<span class="cart-count">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <!-- Cart Intro -->
+  <section class="about" style="padding-bottom:1rem;">
+    <h2>Your Cart</h2>
+    <p>Review your selected items below. You can remove individual items, clear the entire cart, or return to the shop to add more gear.</p>
+  </section>
+
+  <!-- Cart List -->
+  <section class="cart-list">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Dynamic cart rows will be inserted here by script.js -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="cart-total">Total: $0.00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="cart-actions">
+      <button id="clear-cart">Clear Cart</button>
+      <a href="shop.html" class="btn">Continue Shopping</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="socials">
+      <a href="#" aria-label="Follow on Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="Follow on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Follow on Facebook"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <p>&copy; 2026 Hunt Apparel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
